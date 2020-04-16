@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		.divstyle{
+			align-items:center;
+			background-color: grey;
+			width:400px;
+			border:3px solid black;
+
+		}
+		input[type='text']{
+				background-color: black;
+				height: 50px;
+				width:380px;
+				font-size: 20px;
+				color:lime;
+				font-weight: bold;
+
+		}
+
+		input[type='button']{
+			border-radius: 20px;
+			color: black;
+			border:2px solid lime;
+			width: 98px;
+			font-size: 25px;
+
+		}
+
+		#large{
+			width: 300px;
+			
+		}
+
+
+	</style>
+</head>
+<body>
+<br><br><br><br><br><br><br>
+<center>
+<div class="divstyle">
+<br>
+<form name="vkform">
+<input type="text" name="answer">
+<br><br>
+
+<input type="button" value=' 1 ' onclick="vkform.answer.value += '1' ">
+<input type="button" value=' 2 ' onclick="vkform.answer.value += '2' ">
+<input type="button" value=' 3 ' onclick="vkform.answer.value += '3' ">
+
+<br><br>
+<input type="button" value=' 4 ' onclick="vkform.answer.value += '4' ">
+
+<input type="button" value=' 5 ' onclick="vkform.answer.value += '5' ">
+<input type="button" value=' 6 ' onclick="vkform.answer.value += '6' ">
+
+<br><br>
+<input type="button" value=' 7 ' onclick="vkform.answer.value += '7' ">
+<input type="button" value=' 8 ' onclick="vkform.answer.value += '8' ">
+
+<input type="button" value=' 9 ' onclick="vkform.answer.value += '9' ">
+<br><br>
+
+<input type="button" value=' 0 ' onclick="vkform.answer.value += '0' ">
+<input type="button" value=' + ' onclick="vkform.answer.value += '+' ">
+<input type="button" value=' - ' onclick="vkform.answer.value += '-' ">
+<br><br>
+
+<input type="button" value=' * ' onclick="vkform.answer.value += '*' ">
+<input type="button" value=' / ' onclick="vkform.answer.value += '/' ">
+<input type="button" value=' % ' onclick="vkform.answer.value += '%' ">
+<br><br>
+
+<input type="button" value=' . ' onclick="vkform.answer.value += '.' ">
+
+
+<input type="button" value=' = ' onclick="vkform.answer.value = eval(vkform.answer.value) ">
+
+<br><br>
+<input type="button" value=' CLEAR ALL ' onclick="vkform.answer.value = '' " id='large'>
+
+<br>
+<br>
+</form>
+</div>
+</center>
+</body>
+</html>
